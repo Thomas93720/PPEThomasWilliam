@@ -36,14 +36,6 @@
 
         function setPrix($prix) {
             $this->prix = $prix;
-        }
-
-
-        
-        
-        
-        
-        
-        
-        
+        }    
     }
+    ?>
