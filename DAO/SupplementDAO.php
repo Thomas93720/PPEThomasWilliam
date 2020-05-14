@@ -22,10 +22,10 @@ class SupplementDAO
     public static function InsertSupplement($Supplement)
     {
         $initCo = dataBaseLinker::getConnexion();
-        $state = $initCo->prepare("INSERT INTO Supplement(idSupplement,idTacos,prix) VALUES (?,?,?)");
-        $state->bindParam(1,$Commande->getIdSupplement());
-        $state->bindParam(2,$Commande->getIdTacos());
-        $state->bindParam(3,$Commande->getPrix());
+        $state = $initCo->prepare("INSERT INTO Supplement(Frite,Potatoes,prix) VALUES (?,?,?)");
+        $state->bindParam(1,$Supplement->getFrite());
+        $state->bindParam(2,$Supplement->getPotatoes());
+        $state->bindParam(3,$Supplement->getPrix());
         $state->execute();
     }
 }
