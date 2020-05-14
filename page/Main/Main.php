@@ -9,13 +9,17 @@
     </head>
 <body>
     <div class = "topnav">
-        <audio id="audio_play">
-                <source src="Audio/Titre.mp4" type="audio/ogg" />
-        </audio>
-        <a href = "?page=main"><img class = "logo" src = 'image/logo.png' onClick="document.getElementById('audio_play').play(); return false;"></a>
-        <a class = "logo" href = "?page=panier"><h1><i class="fas fa-shopping-basket"></i> Mon panier</h1></a>
-        <a class = "logo" href = "?page=toppimp"><h1><i class="fas fa-utensils"></i> Les meilleurs pimp</h1></a>
-        <a class = "logo" href = "?page=histoire"><h1><i class="fas fa-book"></i> L'histoire de pimp my tacos</h1></a>
-        <a class = "logo" href = "?page=connexion"><h1><i class="fas fa-user-alt"></i> Se connecter</h1></a>
+        <div>
+            <audio id="audio_play">
+                    <source src="Audio/Titre.mp4" type="audio/ogg" />
+            </audio>
+            <a href = "?page=main"><img class = "logo" src = 'image/logo.png' onClick="document.getElementById('audio_play').play(); return false;"></a>
+        </div>
+        <div class="left">
+            <a class = "logo" href = "?page=panier"><h1><i class="fas fa-shopping-basket"></i> Mon panier</h1></a>
+            <a class = "logo" href = "?page=toppimp"><h1><i class="fas fa-utensils"></i> Les meilleurs pimp</h1></a>
+            <a class = "logo" href = "?page=histoire"><h1><i class="fas fa-book"></i> L'histoire de pimp my tacos</h1></a>
+            <a class = "logo" href = "?page=connexion"><h1><i class="fas fa-user-alt"></i> Se connecter</h1></a>
+        </div>
     </div>
     <h1>Pimpez votre tacos</h1>
