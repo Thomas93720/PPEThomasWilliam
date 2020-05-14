@@ -22,7 +22,7 @@ class CommandeDAO
     public static function InsertCommande($Commande)
     {
         $initCo = dataBaseLinker::getConnexion();
-        $state = $initCo->prepare("INSERT INTO Commande(idSupplement,idTacos,prix) VALUES (?,?,?)");
+        $state = $initCo->prepare("INSERT INTO Supplement(Frite,Potatoes,prix) VALUES (?,?,?)");
         $state->bindParam(1,$Commande->getIdSupplement());
         $state->bindParam(2,$Commande->getIdTacos());
         $state->bindParam(3,$Commande->getPrix());

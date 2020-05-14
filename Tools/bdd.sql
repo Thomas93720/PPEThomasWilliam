@@ -25,7 +25,7 @@ CREATE TABLE Commande
 
 CREATE TABLE Client_Commande
 (
-    idClient INT(11),
+    idClient INT(11) NOT NULL AUTO_INCREMENT,
     idCommande INT(11),
     PRIMARY KEY (idClient,idCommande)
 );
@@ -33,7 +33,7 @@ CREATE TABLE Client_Commande
 
 CREATE TABLE Tacos 
 (
-    idTacos INT(11),
+    idTacos INT(11) NOT NULL AUTO_INCREMENT,
     Taille VARCHAR(64),
     Viande1 VARCHAR(64),
     Viande2 VARCHAR(64),
@@ -46,7 +46,7 @@ CREATE TABLE Tacos
 
 CREATE TABLE Supplement
 (
-    idSupplement INT(11),
+    idSupplement INT(11) NOT NULL AUTO_INCREMENT,
     FRITE TINYINT,
     POTATOES TINYINT,
     prix FLOAT,
