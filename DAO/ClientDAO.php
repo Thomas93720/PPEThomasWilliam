@@ -13,7 +13,7 @@
         $adresse=$Client->getAdresse();
         
         $login = DatabaseLinker::getConnexion();
-        $state = $login->prepare("INSERT INTO Chasseur "
+        $state = $login->prepare("INSERT INTO Client "
                 . "(idclient, MotDePasse, Identifiant, email,adresse)"
                 . " VALUES (?, ?, ?, ?, ?)");
         $state->bindParam(1, $idClient);
@@ -27,7 +27,7 @@
         public static function findClient ($idClient)
         {
             $login = DatabaseLinker::getConnexion();
-            $state = $login->prepare("SELECT * FROM Utilisateur WHERE idUtilisateur =?");
+            $state = $login->prepare("SELECT * FROM Client WHERE idUtilisateur =?");
             $state->bindParam(1, $idClient);
             $state->execute();
             $resultats = $state->fetchAll();
@@ -44,7 +44,7 @@
         public static function findClientWithMdpAndId($Identifiant,$MotDePasse)
         {
             $login = DatabaseLinker::getConnexion();
-            $state = $login->prepare("SELECT * FROM Utilisateur WHERE Identifiant =? AND MotDePasse=?");
+            $state = $login->prepare("SELECT * FROM Client WHERE Identifiant =? AND MotDePasse=?");
             $state->bindParam(1, $Identifiant);
             $state->bindParam(2, $MotDePasse);
             $state->execute();
@@ -62,7 +62,7 @@
         public static function AccAlreadyExist($Identifiant)
         {
             $login = DatabaseLinker::getConnexion();
-            $state = $login->prepare("SELECT * FROM Utilisateur WHERE Identifiant LIKE ?");
+            $state = $login->prepare("SELECT * FROM Client WHERE Identifiant LIKE ?");
             $state->bindParam(1, $Identifiant);
             $resultats = $state->fetchAll();
             if(empty($resultats)){
