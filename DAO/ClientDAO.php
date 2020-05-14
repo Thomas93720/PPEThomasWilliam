@@ -41,7 +41,39 @@
             return $utilisateur;            
         }
         
-        
-        
-        
+        public static function findClientWithMdpAndId($Identifiant,$MotDePasse)
+        {
+            $login = DatabaseLinker::getConnexion();
+            $state = $login->prepare("SELECT * FROM Utilisateur WHERE Identifiant =? AND MotDePasse=?");
+            $state->bindParam(1, $Identifiant);
+            $state->bindParam(2, $MotDePasse);
+            $state->execute();
+            $resultats = $state->fetchAll();
+            foreach ($resultats as $lineResultats)
+            { 
+                $client= new Client();
+                $Client->setIdClient($lineResultats["idClient"]);
+                $Client->setIdentifiant($lineResultats["Identifiant"]);
+                $Client->setMotDePasse($lineResultats["MotDePasse"]);
+                return $Client;
+            }
+            return null;  
+        }
+        public static function AccAlreadyExist($Identifiant)
+        {
+            $login = DatabaseLinker::getConnexion();
+            $state = $login->prepare("SELECT * FROM Utilisateur WHERE Identifiant LIKE ?");
+            $state->bindParam(1, $Identifiant);
+            $resultats = $state->fetchAll();
+            if(empty($resultats)){
+                $checked = true; 
+            }
+
+            else{
+                $checked = false;
+            }
+            return $checked;
+            
+        }        
     }
+?>
