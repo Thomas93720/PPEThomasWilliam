@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset = "utf-8"/>
-        <link href = "page/Main/Style.css" rel = "stylesheet" type = "text/css" media = "all"/>
+        <link href = "page/viewTacos/Style.css" rel = "stylesheet" type = "text/css" media = "all"/>
         <link rel="stylesheet" href="https://kit.fontawesome.com/92920db574.js" /> 
         <script src="https://kit.fontawesome.com/92920db574.js" crossorigin="anonymous"></script>
         <title>Pimp My Tacos</title>
@@ -13,21 +13,20 @@
             <audio id="audio_play">
                 <source src="Audio/Titre.mp4" type="audio/ogg" />
             </audio>
-            <img class = "logo" src = 'image/logo.png' onClick="document.getElementById('audio_play').play(); return false;">
+            <a href = "?page=Main"><img class = "logo" src = 'image/logo.png'></a>
         </div>
         <div class="lien">
-            <a href="?page=viewTacos">Pimp ton tacos</a>
+            <a href="?page=viewTacos">Pimp ton tacos<p></p></a>
             <?php
-            session_start();
             if(!empty($_SESSION["user"]))
             {
                 ?>
-                <a href="?page=Commande">Vos Commandes</a>
-                <a href="?page=Info">Mes informations</a>
+                <a href="?page=Commande">Vos Commandes<p></p></a>
+                <a href="?page=Info">Mes informations<p></p></a>
                 <?php
             }
             ?>
-            <a href="?page=Info">Notre histoire</a>
+            <a href="?page=Info">Notre histoire<p></p></a>
         </div>
         <div class="bouton">
             <a href="?page=panier"><i class="fas fa-shopping-cart"></i></a>
@@ -45,23 +44,5 @@
                 <?php
             }
             ?>
-            
         </div>
     </nav>
-    <div class=content>
-    <div class="image">
-    <?php
-        if(!empty($_SESSION["user"]))
-        {
-            include("DAO/ClientDAO.php");
-            $user = ClientDAO::findClientWithId(1);
-            ?>
-            <h2>Bienvenue, <?php echo $user->getIdentifiant(); ?></h2>
-            <?php
-        }
-    ?>
-    </div>
-    <br>
-    <hr>
-    <bR>
-    ©Prezot And Bonnemoy Industry

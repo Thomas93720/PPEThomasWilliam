@@ -13,9 +13,7 @@
         $adresse=$Client->getAdresse();
         
         $login = DatabaseLinker::getConnexion();
-        $state = $login->prepare("INSERT INTO Client "
-                . "(idclient, MotDePasse, Identifiant, email,adresse)"
-                . " VALUES (?, ?, ?, ?, ?)");
+        $state = $login->prepare("INSERT INTO Client (MotDePasse, Identifiant, email,adresse) VALUES (?, ?, ?, ?)");
         $state->bindParam(1, $idClient);
         $state->bindParam(2, $MotDePasse);
         $state->bindParam(3, $Identifiant);
@@ -24,23 +22,7 @@
         $state->execute();
         }
         
-        public static function findClient ($idClient)
-        {
-            $login = DatabaseLinker::getConnexion();
-            $state = $login->prepare("SELECT * FROM Client WHERE idUtilisateur =?");
-            $state->bindParam(1, $idClient);
-            $state->execute();
-            $resultats = $state->fetchAll();
-            foreach ($resultats as $lineResultats)
-	    {
-                $Client = new Client();
-                $Client->setIdClient($lineResultats["idClient"]);
-                $Client->setIdentifiant($lineResultats["Identifiant"]);
-                $Client->setMotDePasse($lineResultats["MotDePasse"]);
-            }
-            return $utilisateur;            
-        }
-        
+
         public static function findClientWithMdpAndId($Identifiant,$MotDePasse)
         {
             $login = DatabaseLinker::getConnexion();
@@ -51,7 +33,7 @@
             $resultats = $state->fetchAll();
             foreach ($resultats as $lineResultats)
             { 
-                $client= new Client();
+                $Client= new Client();
                 $Client->setIdClient($lineResultats["idClient"]);
                 $Client->setIdentifiant($lineResultats["Identifiant"]);
                 $Client->setMotDePasse($lineResultats["MotDePasse"]);
@@ -59,6 +41,25 @@
             }
             return null;  
         }
+
+        public static function findClientWithId($Id)
+        {
+            $login = DatabaseLinker::getConnexion();
+            $state = $login->prepare("SELECT * FROM Client WHERE IdClient =?");
+            $state->bindParam(1, $Id);
+            $state->execute();
+            $resultats = $state->fetchAll();
+            foreach ($resultats as $lineResultats)
+            { 
+                $Client= new Client();
+                $Client->setIdClient($lineResultats["idClient"]);
+                $Client->setIdentifiant($lineResultats["Identifiant"]);
+                $Client->setMotDePasse($lineResultats["MotDePasse"]);
+                return $Client;
+            }
+            return null;  
+        }
+
         public static function AccAlreadyExist($Identifiant)
         {
             $login = DatabaseLinker::getConnexion();

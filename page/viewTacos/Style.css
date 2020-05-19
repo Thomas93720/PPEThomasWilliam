@@ -1,0 +1,216 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:black;
+}
+.logo
+{    
+    width: 200px;
+    height: 100px;
+    align-self: center;
+}
+.image
+{
+    width: 100%;
+    height: 600px;
+    background:url(/PPEThomasWilliam/image/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:black;
+}
+.viande-print
+{
+  display: flex;
+  justify-content: center;
+}
+.viande
+{
+  width: 250px;
+  height: 200px;
+}
+i
+{
+    align-self: center;
+    font-size: 25px;
+    color: lightslategrey;
+}
+nav
+{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: white;
+}
+.bouton
+{
+    display: flex;
+    justify-content: space-around;
+    width: 75px;
+}
+.lien
+{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+a
+{
+    align-self: center;
+    text-decoration: none;
+    color: lightslategrey;
+}
+.S
+{
+    width: 100px;
+    height: 100px;
+}
+.M
+{
+    width: 180px;
+    height: 180px;
+}
+.L
+{
+    width: 250px;
+    height: 250px;
+}
+
+
+
+input[type=range] {
+    height: 26px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 300px;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 14px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px grey;
+    background: grey;
+    border-radius: 14px;
+    border: 0px solid grey;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px grey;
+    border: 0px solid grey;
+    height: 20px;
+    width: 40px;
+    border-radius: 12px;
+    background: black;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: grey;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 14px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px grey;
+    background: grey;
+    border-radius: 14px;
+    border: 0px solid grey;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px grey;
+    border: 0px solid grey;
+    height: 20px;
+    width: 40px;
+    border-radius: 12px;
+    background: black;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 14px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: grey;
+    border: 0px solid grey;
+    border-radius: 28px;
+    box-shadow: 1px 1px 1px grey;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: grey;
+    border: 0px solid grey;
+    border-radius: 28px;
+    box-shadow: 1px 1px 1px grey;
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px grey;
+    border: 0px solid grey;
+    height: 20px;
+    width: 40px;
+    border-radius: 12px;
+    background: black;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: grey;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: grey;
+  }
+  input[type=submit] {
+    background-color: black;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size:16px;
+    font-weight: bold;
+    line-height: 1.4;
+    padding: 10px;
+    width: 180px
+  }
+
+
+
+
+
+  .img
+{
+    width: 200px;
+    height: 150px;
+    border-bottom: 1px solid;
+}
+.test
+{
+    width: 220px;
+}
+.test
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bottom-test
+{
+    align-self: center;
+}
+.img-print
+{
+  display: flex;
+  justify-content: center;
+}
+label
+{
+  font-size: 25px;
+}
