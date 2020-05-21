@@ -58,28 +58,25 @@
                 <h2>Prenom</h2>
                 <input type="text" name="prenom" <?php echo 'value="'.$Client->getPrenom().'"' ?>>
             </div>
-            <div>
-                <h2>Date de naissance</h2>
-                <input type="date" <?php echo 'value="'.$Client->getDateNaissance().'"' ?> value="2001-07-22">
-            </div>
         </div>
             <div>
                 <h2>Adresse de livraison</h2>
                 <input type="text" name="adresse" <?php echo 'value="'.$Client->getAdresse().'"' ?> style="width:500px;">
                 <h2>Code Postal</h2>
                 <input type="number" name="code" <?php echo 'value="'.$Client->getCodePostal().'"' ?>>
-            </div>
-            <input type="submit" value="Valider">
+            </div> 
+            <input type="submit" value="Valider" onclick='alert("Commande effectuée")'>
     </form>
     <?php
     
     
-    if(!empty($_POST["nom"]) && !empty($_POST["prenom"]) && !empty($_POST["dateNaissance"]) && !empty($_POST["adresse"]) && !empty($_POST["code"]))
+    if(!empty($_POST["nom"]) && !empty($_POST["prenom"]) && !empty($_POST["adresse"]) && !empty($_POST["code"]))
     {
-        $Client->setAdresse($_POST["adresse"]);
-        $Client->setCodePostal($_POST["code"]);
-        $Client->setNom($_POST["nom"]);
-        $Client->setPrenom($_POST["prenom"]);
-        $Client->setDateNaissance($_POST["dateNaissance"]);
+        var_dump(CommandeDAO::DeleteAllCommande($_SESSION["user"]));
+        ?>
+        <?php
+        header('location:?page=Main');
+        exit();
     } 
+
     ?>

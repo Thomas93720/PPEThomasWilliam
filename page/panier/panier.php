@@ -26,7 +26,7 @@
             if(!empty($_SESSION["user"]))
             {
                 ?>
-                <a href="?page=Info">Mes informations<p></p></a>
+                <a href="?page=ChangeInfo">Mes informations<p></p></a>
                 <?php
             }
             ?>
@@ -105,6 +105,8 @@
             if(!empty($_POST["delete"]))
             {
                 CommandeDAO::DeleteCommande($_POST["delete"]);
+                header('location:?page=panier');
+                exit();
             }
             ?>
 </div>

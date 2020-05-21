@@ -18,7 +18,7 @@
             <audio id="audio_play">
                 <source src="Audio/Titre.mp4" type="audio/ogg" />
             </audio>
-            <a href = "?page=Main"><img class = "logo" src = 'image/logo.png'></a>
+            <a href = "?page=Main"><img class = "logo" src = 'image/logo.png' alt="logo"></a>
         </div>
         <div class="lien">
             <a href="?page=viewTacos">Pimp ton tacos<p></p></a>
@@ -38,7 +38,7 @@
             if(!empty($_SESSION["user"]))
             {
                 ?>
-                <a href="?page=deconnexion"><i class="fas fa-sign-out-alt"></i></i></a>
+                <a href="?page=deconnexion"><i class="fas fa-sign-out-alt"></i></a>
                 <?php
             }
             else

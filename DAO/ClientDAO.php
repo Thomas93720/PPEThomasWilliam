@@ -83,5 +83,20 @@
             return $checked;
             
         }        
+        public static function UpdateClient($MotDePasse,$nom,$prenom,$Identifiant,$email,$adresse,$codePostal,$dateNaissance,$id)
+        {
+            $login = DatabaseLinker::getConnexion();
+            $state = $login->prepare("UPDATE client SET MotDePasse=?,nom=?,prenom=?,Identifiant=?,email=?,adresse=?,codePostal=?,dateNaissance=? WHERE idClient=?");
+            $state->bindParam(1, $id);
+            $state->bindParam(2, $MotDePasse);
+            $state->bindParam(3, $nom);
+            $state->bindParam(4, $prenom);
+            $state->bindParam(5, $Identifiant);
+            $state->bindParam(6, $email);
+            $state->bindParam(7, $adresse);
+            $state->bindParam(8, $codePostal);
+            $state->bindParam(9, $dateNaissance);
+            $state->execute();
+        }
     }
 ?>

@@ -54,5 +54,12 @@ class CommandeDAO
         $state->bindParam(1,$id);
         $state->execute();
     }
+    public static function DeleteAllCommande($id)
+    {
+        $initCo = dataBaseLinker::getConnexion();
+        $state = $initCo->prepare("DELETE FROM commande WHERE idClient = ?");
+        $state->bindParam(1,$id);
+        $state->execute();
+    }
 }
 ?>

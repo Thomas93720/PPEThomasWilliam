@@ -125,8 +125,11 @@
             include_once("page/Commande/Commande.php");
             break;
         case "Info" :
-            session_start();
             include_once("page/histoire/histoire.php");
+            break;
+        case "ChangeInfo" :
+            session_start();
+            include_once("page/info/MesInfo.php");
             break;
         default : 
             echo "<h1>404</h1>";
