@@ -9,36 +9,36 @@
                         <div class="test">
                             <img class="img" src="image/viande/steak.png">
                             <div class="bottom-test">
-                                <input type="radio" id="Steak" name="viande" value="Steak">
-                                <label>Steak</label>
+                                <label><input type="radio" id="Steak" name="viande" value="Steak">
+                                Steak</label>
                             </div>
                         </div>
                         <div class="test">
                         <img class="img" src="image/viande/escalope.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Escalope" name="viande" value="Escalope">
-                                <label>Escalope</label>
+                                <label><input type="radio" id="Escalope" name="viande" value="Escalope">
+                                Escalope</label>
                             </div>
                         </div>
                         <div class="test">
                             <img class="img" src="image/viande/Kebab.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Kebab" name="viande" value="Kebab">
-                                <label>Kebab</label>
+                                <label><input type="radio" id="Kebab" name="viande" value="Kebab">
+                                Kebab</label>
                             </div>
                         </div>
                         <div class="test">
                         <img class="img" src="image/viande/nuggets.png">
                             <div class="bottom-test">
-                                <input type="radio" id="Nuggets" name="viande" value="Nuggets">
-                                <label>Nuggets</label>
+                                <label><input type="radio" id="Nuggets" name="viande" value="Nuggets">
+                                Nuggets</label>
                             </div>
                         </div>
                         <div class="test">
                             <img class="img" src="image/viande/tenders.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Tenders" name="viande" value="Tenders">
-                                <label>Tenders</label>
+                                <label><input type="radio" id="Tenders" name="viande" value="Tenders">
+                                Tenders</label>
                             </div>
                         </div>
                     </div>
@@ -61,36 +61,36 @@
                         <div class="test">
                             <img class="img" src="image/viande/steak.png">
                             <div class="bottom-test">
-                                <input type="radio" id="Steak" name="viande" value="Steak">
-                                <label>Steak</label>
+                                <label><input type="radio" id="Steak" name="viande" value="Steak">
+                                Steak</label>
                             </div>
                         </div>
                         <div class="test">
                         <img class="img" src="image/viande/escalope.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Escalope" name="viande" value="Escalope">
-                                <label>Escalope</label>
+                                <label><input type="radio" id="Escalope" name="viande" value="Escalope">
+                                Escalope</label>
                             </div>
                         </div>
                         <div class="test">
                             <img class="img" src="image/viande/Kebab.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Kebab" name="viande" value="Kebab">
-                                <label>Kebab</label>
+                                <label><input type="radio" id="Kebab" name="viande" value="Kebab">
+                                Kebab</label>
                             </div>
                         </div>
                         <div class="test">
                         <img class="img" src="image/viande/nuggets.png">
                             <div class="bottom-test">
-                                <input type="radio" id="Nuggets" name="viande" value="Nuggets">
-                                <label>Nuggets</label>
+                                <label><input type="radio" id="Nuggets" name="viande" value="Nuggets">
+                                Nuggets</label>
                             </div>
                         </div>
                         <div class="test">
                             <img class="img" src="image/viande/tenders.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Tenders" name="viande" value="Tenders">
-                                <label>Tenders</label>
+                                <label><input type="radio" id="Tenders" name="viande" value="Tenders">
+                                Tenders</label>
                             </div>
                         </div>
                     </div>
@@ -99,36 +99,36 @@
                         <div class="test">
                             <img class="img" src="image/viande/steak.png">
                             <div class="bottom-test">
-                                <input type="radio" id="Steak" name="viande2" value="Steak">
-                                <label>Steak</label>
+                                <label><input type="radio" id="Steak" name="viande2" value="Steak">
+                                Steak</label>
                             </div>
                         </div>
                         <div class="test">
                         <img class="img" src="image/viande/escalope.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Escalope" name="viande2" value="Escalope">
-                                <label>Escalope</label>
+                                <label><input type="radio" id="Escalope" name="viande2" value="Escalope">
+                                Escalope</label>
                             </div>
                         </div>
                         <div class="test">
                             <img class="img" src="image/viande/Kebab.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Kebab" name="viande2" value="Kebab">
-                                <label>Kebab</label>
+                                <label><input type="radio" id="Kebab" name="viande2" value="Kebab">
+                                Kebab</label>
                             </div>
                         </div>
                         <div class="test">
                         <img class="img" src="image/viande/nuggets.png">
                             <div class="bottom-test">
-                                <input type="radio" id="Nuggets" name="viande2" value="Nuggets">
-                                <label>Nuggets</label>
+                                <label><input type="radio" id="Nuggets" name="viande2" value="Nuggets">
+                                Nuggets</label>
                             </div>
                         </div>
                         <div class="test">
                             <img class="img" src="image/viande/tenders.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Tenders" name="viande2" value="Tenders">
-                                <label>Tenders</label>
+                                <label><input type="radio" id="Tenders" name="viande2" value="Tenders">
+                                Tenders</label>
                             </div>
                         </div>
                     </div>
@@ -153,36 +153,36 @@
                         <div class="test">
                             <img class="img" src="image/viande/steak.png">
                             <div class="bottom-test">
-                                <input type="radio" id="Steak" name="viande" value="Steak">
-                                <label>Steak</label>
+                                <label><input type="radio" id="Steak" name="viande" value="Steak">
+                                Steak</label>
                             </div>
                         </div>
                         <div class="test">
                         <img class="img" src="image/viande/escalope.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Escalope" name="viande" value="Escalope">
-                                <label>Escalope</label>
+                                <label><input type="radio" id="Escalope" name="viande" value="Escalope">
+                                Escalope</label>
                             </div>
                         </div>
                         <div class="test">
                             <img class="img" src="image/viande/Kebab.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Kebab" name="viande" value="Kebab">
-                                <label>Kebab</label>
+                                <label><input type="radio" id="Kebab" name="viande" value="Kebab">
+                                Kebab</label>
                             </div>
                         </div>
                         <div class="test">
                         <img class="img" src="image/viande/nuggets.png">
                             <div class="bottom-test">
-                                <input type="radio" id="Nuggets" name="viande" value="Nuggets">
-                                <label>Nuggets</label>
+                                <label><input type="radio" id="Nuggets" name="viande" value="Nuggets">
+                                Nuggets</label>
                             </div>
                         </div>
                         <div class="test">
                             <img class="img" src="image/viande/tenders.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Tenders" name="viande" value="Tenders">
-                                <label>Tenders</label>
+                                <label><input type="radio" id="Tenders" name="viande" value="Tenders">
+                                Tenders</label>
                             </div>
                         </div>
                     </div>
@@ -191,36 +191,36 @@
                         <div class="test">
                             <img class="img" src="image/viande/steak.png">
                             <div class="bottom-test">
-                                <input type="radio" id="Steak" name="viande2" value="Steak">
-                                <label>Steak</label>
+                                <label><input type="radio" id="Steak" name="viande2" value="Steak">
+                                Steak</label>
                             </div>
                         </div>
                         <div class="test">
                         <img class="img" src="image/viande/escalope.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Escalope" name="viande2" value="Escalope">
-                                <label>Escalope</label>
+                                <label><input type="radio" id="Escalope" name="viande2" value="Escalope">
+                                Escalope</label>
                             </div>
                         </div>
                         <div class="test">
                             <img class="img" src="image/viande/Kebab.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Kebab" name="viande2" value="Kebab">
-                                <label>Kebab</label>
+                                <label><input type="radio" id="Kebab" name="viande2" value="Kebab">
+                                Kebab</label>
                             </div>
                         </div>
                         <div class="test">
                         <img class="img" src="image/viande/nuggets.png">
                             <div class="bottom-test">
-                                <input type="radio" id="Nuggets" name="viande2" value="Nuggets">
-                                <label>Nuggets</label>
+                                <label><input type="radio" id="Nuggets" name="viande2" value="Nuggets">
+                                Nuggets</label>
                             </div>
                         </div>
                         <div class="test">
                             <img class="img" src="image/viande/tenders.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Tenders" name="viande2" value="Tenders">
-                                <label>Tenders</label>
+                                <label><input type="radio" id="Tenders" name="viande2" value="Tenders">
+                                Tenders</label>
                             </div>
                         </div>
                     </div>
@@ -230,36 +230,36 @@
                         <div class="test">
                             <img class="img" src="image/viande/steak.png">
                             <div class="bottom-test">
-                                <input type="radio" id="Steak" name="viande3" value="Steak">
-                                <label>Steak</label>
+                                <label><input type="radio" id="Steak" name="viande3" value="Steak">
+                                Steak</label>
                             </div>
                         </div>
                         <div class="test">
                         <img class="img" src="image/viande/escalope.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Escalope" name="viande3" value="Escalope">
-                                <label>Escalope</label>
+                                <label><input type="radio" id="Escalope" name="viande3" value="Escalope">
+                                Escalope</label>
                             </div>
                         </div>
                         <div class="test">
                             <img class="img" src="image/viande/Kebab.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Kebab" name="viande3" value="Kebab">
-                                <label>Kebab</label>
+                                <label><input type="radio" id="Kebab" name="viande3" value="Kebab">
+                                Kebab</label>
                             </div>
                         </div>
                         <div class="test">
                         <img class="img" src="image/viande/nuggets.png">
                             <div class="bottom-test">
-                                <input type="radio" id="Nuggets" name="viande3" value="Nuggets">
-                                <label>Nuggets</label>
+                                <label><input type="radio" id="Nuggets" name="viande3" value="Nuggets">
+                                Nuggets</label>
                             </div>
                         </div>
                         <div class="test">
                             <img class="img" src="image/viande/tenders.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Tenders" name="viande3" value="Tenders">
-                                <label>Tenders</label>
+                                <label><input type="radio" id="Tenders" name="viande3" value="Tenders">
+                                Tenders</label>
                             </div>
                         </div>
                     </div>
@@ -285,36 +285,36 @@
                         <div class="test">
                             <img class="img" src="image/viande/steak.png">
                             <div class="bottom-test">
-                                <input type="radio" id="Steak" name="viande" value="Steak">
-                                <label>Steak</label>
+                                <label><input type="radio" id="Steak" name="viande" value="Steak">
+                                Steak</label>
                             </div>
                         </div>
                         <div class="test">
                         <img class="img" src="image/viande/escalope.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Escalope" name="viande" value="Escalope">
-                                <label>Escalope</label>
+                                <label><input type="radio" id="Escalope" name="viande" value="Escalope">
+                                Escalope</label>
                             </div>
                         </div>
                         <div class="test">
                             <img class="img" src="image/viande/Kebab.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Kebab" name="viande" value="Kebab">
-                                <label>Kebab</label>
+                                <label><input type="radio" id="Kebab" name="viande" value="Kebab">
+                                Kebab</label>
                             </div>
                         </div>
                         <div class="test">
                         <img class="img" src="image/viande/nuggets.png">
                             <div class="bottom-test">
-                                <input type="radio" id="Nuggets" name="viande" value="Nuggets">
-                                <label>Nuggets</label>
+                                <label><input type="radio" id="Nuggets" name="viande" value="Nuggets">
+                                Nuggets</label>
                             </div>
                         </div>
                         <div class="test">
                             <img class="img" src="image/viande/tenders.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Tenders" name="viande" value="Tenders">
-                                <label>Tenders</label>
+                                <label><input type="radio" id="Tenders" name="viande" value="Tenders">
+                                Tenders</label>
                             </div>
                         </div>
                     </div>
@@ -323,36 +323,36 @@
                         <div class="test">
                             <img class="img" src="image/viande/steak.png">
                             <div class="bottom-test">
-                                <input type="radio" id="Steak" name="viande2" value="Steak">
-                                <label>Steak</label>
+                                <label><input type="radio" id="Steak" name="viande2" value="Steak">
+                                Steak</label>
                             </div>
                         </div>
                         <div class="test">
                         <img class="img" src="image/viande/escalope.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Escalope" name="viande2" value="Escalope">
-                                <label>Escalope</label>
+                                <label><input type="radio" id="Escalope" name="viande2" value="Escalope">
+                                Escalope</label>
                             </div>
                         </div>
                         <div class="test">
                             <img class="img" src="image/viande/Kebab.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Kebab" name="viande2" value="Kebab">
-                                <label>Kebab</label>
+                                <label><input type="radio" id="Kebab" name="viande2" value="Kebab">
+                                Kebab</label>
                             </div>
                         </div>
                         <div class="test">
                         <img class="img" src="image/viande/nuggets.png">
                             <div class="bottom-test">
-                                <input type="radio" id="Nuggets" name="viande2" value="Nuggets">
-                                <label>Nuggets</label>
+                                <label><input type="radio" id="Nuggets" name="viande2" value="Nuggets">
+                                Nuggets</label>
                             </div>
                         </div>
                         <div class="test">
                             <img class="img" src="image/viande/tenders.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Tenders" name="viande2" value="Tenders">
-                                <label>Tenders</label>
+                                <label><input type="radio" id="Tenders" name="viande2" value="Tenders">
+                                Tenders</label>
                             </div>
                         </div>
                     </div>
@@ -362,36 +362,36 @@
                         <div class="test">
                             <img class="img" src="image/viande/steak.png">
                             <div class="bottom-test">
-                                <input type="radio" id="Steak" name="viande3" value="Steak">
-                                <label>Steak</label>
+                                <label><input type="radio" id="Steak" name="viande3" value="Steak">
+                                Steak</label>
                             </div>
                         </div>
                         <div class="test">
                         <img class="img" src="image/viande/escalope.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Escalope" name="viande3" value="Escalope">
-                                <label>Escalope</label>
+                                <label><input type="radio" id="Escalope" name="viande3" value="Escalope">
+                                Escalope</label>
                             </div>
                         </div>
                         <div class="test">
                             <img class="img" src="image/viande/Kebab.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Kebab" name="viande3" value="Kebab">
-                                <label>Kebab</label>
+                                <label><input type="radio" id="Kebab" name="viande3" value="Kebab">
+                                Kebab</label>
                             </div>
                         </div>
                         <div class="test">
                         <img class="img" src="image/viande/nuggets.png">
                             <div class="bottom-test">
-                                <input type="radio" id="Nuggets" name="viande3" value="Nuggets">
-                                <label>Nuggets</label>
+                                <label><input type="radio" id="Nuggets" name="viande3" value="Nuggets">
+                                Nuggets</label>
                             </div>
                         </div>
                         <div class="test">
                             <img class="img" src="image/viande/tenders.jpg">
                             <div class="bottom-test">
-                                <input type="radio" id="Tenders" name="viande3" value="Tenders">
-                                <label>Tenders</label>
+                                <label><input type="radio" id="Tenders" name="viande3" value="Tenders">
+                                Tenders</label>
                             </div>
                         </div>
                     </div>

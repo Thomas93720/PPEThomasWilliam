@@ -4,15 +4,16 @@
         <link rel="stylesheet" href="page/connexion/connexion.css" media="screen" type="text/css" />
     </head>
     <body>
-        <div id="container">
-            <form method="POST">
+    <div class="page-container">
+        <div class="page-content">
+            <div class="box">
                 <h1>Connexion</h1>
-                <label><b>Nom d'utilisateur</b></label>
-                <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
-                <label><b>Mot de passe</b></label>
-                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
-                <input type="submit" id='submit' value='LOGIN' >
-            </form>
+                <form method="POST">
+                    <label class="labelId">Identifiant :<input type="text" placeholder="Insérez votre identifiant..." name="username"></label>
+                    <label class="labelMdp">Mot de passe :<input type="password" placeholder="Insérez votre mot de passe..." name="password"></label>
+                    <input type="submit" name="valider" value="Se connecter">
+                    <label class="new-ask">Pas encore de compte ? <a class="lien" href="?page=inscription">S'inscrire</a></label>
+                </form>
+            </div>
         </div>
-    </body>
-</html>
+    </div>

@@ -4,21 +4,18 @@
 
     class ClientDAO
     {
-        public static function insertClient($client)
-        {       
-        $idclient =$Client->getIdClient();
-        $MotDePasse=$Client->getMotDePasse();
-        $Identifiant=$Client->getIdentifiant();
-        $email=$Client->getEmail();
-        $adresse=$Client->getAdresse();
-        
+        public static function insertClient($nom,$prenom,$MotDePasse,$Identifiant,$email,$adresse,$dateNaissance,$codePostal)
+        {
         $login = DatabaseLinker::getConnexion();
-        $state = $login->prepare("INSERT INTO Client (MotDePasse, Identifiant, email,adresse) VALUES (?, ?, ?, ?)");
-        $state->bindParam(1, $idClient);
-        $state->bindParam(2, $MotDePasse);
-        $state->bindParam(3, $Identifiant);
-        $state->bindParam(4, $email);
-        $state->bindParam(5, $adresse);
+        $state = $login->prepare("INSERT INTO Client (nom,prenom,MotDePasse, Identifiant, email,adresse,dateNaissance,codePostal) VALUES (?,?,?, ?, ?, ?,?,?)");
+        $state->bindParam(1, $nom);
+        $state->bindParam(2, $prenom);
+        $state->bindParam(3, $MotDePasse);
+        $state->bindParam(4, $Identifiant);
+        $state->bindParam(5, $email);
+        $state->bindParam(6, $adresse);
+        $state->bindParam(7, $dateNaissance);
+        $state->bindParam(8, $codePostal);
         $state->execute();
         }
         
@@ -37,6 +34,11 @@
                 $Client->setIdClient($lineResultats["idClient"]);
                 $Client->setIdentifiant($lineResultats["Identifiant"]);
                 $Client->setMotDePasse($lineResultats["MotDePasse"]);
+                $Client->setAdresse($lineResultats["adresse"]);
+                $Client->setCodePostal($lineResultats["codePostal"]);
+                $Client->setNom($lineResultats["nom"]);
+                $Client->setPrenom($lineResultats["prenom"]);
+                $Client->setDateNaissance($lineResultats["dateNaissance"]);
                 return $Client;
             }
             return null;  
@@ -55,6 +57,11 @@
                 $Client->setIdClient($lineResultats["idClient"]);
                 $Client->setIdentifiant($lineResultats["Identifiant"]);
                 $Client->setMotDePasse($lineResultats["MotDePasse"]);
+                $Client->setAdresse($lineResultats["adresse"]);
+                $Client->setCodePostal($lineResultats["codePostal"]);
+                $Client->setNom($lineResultats["nom"]);
+                $Client->setPrenom($lineResultats["prenom"]);
+                $Client->setDateNaissance($lineResultats["dateNaissance"]);
                 return $Client;
             }
             return null;  

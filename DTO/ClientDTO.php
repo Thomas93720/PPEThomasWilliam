@@ -9,6 +9,10 @@ class Client
     private $Identifiant;
     private $email;
     private $adresse;
+    private $codePostal;
+    private $Nom;
+    private $Prenom;
+    private $dateNaissance;
 
     public function getAdresse()
     {
@@ -66,6 +70,54 @@ class Client
     public function setIdClient($idClient)
     {
         $this->idClient = $idClient;
+
+        return $this;
+    }
+
+    public function getCodePostal()
+    {
+        return $this->codePostal;
+    }
+
+    public function setCodePostal($codePostal)
+    {
+        $this->codePostal = $codePostal;
+
+        return $this;
+    }
+
+    public function getNom()
+    {
+        return $this->Nom;
+    }
+
+    public function setNom($Nom)
+    {
+        $this->Nom = $Nom;
+
+        return $this;
+    }
+
+    public function getPrenom()
+    {
+        return $this->Prenom;
+    }
+
+    public function setPrenom($Prenom)
+    {
+        $this->Prenom = $Prenom;
+
+        return $this;
+    }
+
+    public function getDateNaissance()
+    {
+        return $this->dateNaissance;
+    }
+
+    public function setDateNaissance($dateNaissance)
+    {
+        $this->dateNaissance = $dateNaissance;
 
         return $this;
     }

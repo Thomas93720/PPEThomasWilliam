@@ -160,7 +160,7 @@
             <img class="img" src="image/Sauce/frites.webp">
             <div class="bottom-test">
                 <label>
-                <input type="radio" id="frite" name="frite" value="Fites">
+                <input type="radio" id="frite" name="frite" value="Frites">
                 Frites</label>
             </div>
         </div>
@@ -185,6 +185,6 @@
         $_SESSION["sauce"] = $_POST["sauce"];
         $_SESSION["sauce2"] = $_POST["sauce2"];
         $_SESSION["frite"] = $_POST["frite"];
-        echo '<a href="?page=panier"><input type="submit" value="Suivant >"></a>';
+        echo '<a href="?page=panierController"><input type="submit" value="Suivant >"></a>';
     }
 ?>

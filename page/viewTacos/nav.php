@@ -8,6 +8,11 @@
         <title>Pimp My Tacos</title>
     </head>
 <body>
+<?php
+    include("DAO/CommandeDAO.php");
+    $Commande = CommandeDAO::findAllCommande($_SESSION["user"]);
+    $_SESSION["cardSize"] = sizeof($Commande);
+?>
     <nav>
         <div class="logo">
             <audio id="audio_play">
@@ -21,15 +26,14 @@
             if(!empty($_SESSION["user"]))
             {
                 ?>
-                <a href="?page=Commande">Vos Commandes<p></p></a>
-                <a href="?page=Info">Mes informations<p></p></a>
+                <a href="?page=ChangeInfo">Mes informations<p></p></a>
                 <?php
             }
             ?>
             <a href="?page=Info">Notre histoire<p></p></a>
         </div>
         <div class="bouton">
-            <a href="?page=panier"><i class="fas fa-shopping-cart"></i></a>
+            <a href="?page=panier"><i class="fas fa-shopping-cart"><?php echo '('.$_SESSION["cardSize"].') ';?></i></a>
             <?php
             if(!empty($_SESSION["user"]))
             {

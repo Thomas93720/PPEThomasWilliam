@@ -9,6 +9,9 @@
     </head>
 <body>
     <nav>
+    <?php
+        include("DAO/CommandeDAO.php");
+    ?>
         <div class="logo">
             <audio id="audio_play">
                 <source src="Audio/Titre.mp4" type="audio/ogg" />
@@ -22,7 +25,6 @@
             if(!empty($_SESSION["user"]))
             {
                 ?>
-                <a href="?page=Commande">Vos Commandes</a>
                 <a href="?page=Info">Mes informations</a>
                 <?php
             }
@@ -30,7 +32,7 @@
             <a href="?page=Info">Notre histoire</a>
         </div>
         <div class="bouton">
-            <a href="?page=panier"><i class="fas fa-shopping-cart"></i></a>
+            <a href="?page=panier"><i class="fas fa-shopping-cart"><?php if(!empty($_SESSION["user"])){ echo '('.sizeof(CommandeDAO::findAllCommande($_SESSION["user"])).') '; }?></i></a>
             <?php
             if(!empty($_SESSION["user"]))
             {
@@ -54,9 +56,9 @@
         if(!empty($_SESSION["user"]))
         {
             include("DAO/ClientDAO.php");
-            $user = ClientDAO::findClientWithId(1);
+            $user = ClientDAO::findClientWithId($_SESSION["user"]);
             ?>
-            <h2>Bienvenue, <?php echo $user->getIdentifiant(); ?></h2>
+            <h2>Bienvenue, <?php echo $user->getNom(); ?></h2>
             <?php
         }
     ?>
